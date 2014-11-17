@@ -1,0 +1,66 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rshp="http://purl.org/krgroup/rshp/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://purl.org/krgroup/rshp/example/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbpedia-res="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/l2">
+    <rshp:has-type rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rshp:has-value>1</rshp:has-value>
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/l3">
+    <rshp:has-type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rshp:has-lang>en</rshp:has-lang>
+    <rshp:has-value>Mountain Bike</rshp:has-value>
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/RSHP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/RSHP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/l4">
+    <rshp:has-type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rshp:has-lang>es</rshp:has-lang>
+    <rshp:has-value>Bicileta de Montaña</rshp:has-value>
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/o1">
+    <rshp:has-type rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rshp:has-value rdf:resource="http://dbpedia.org/resource/Mountain_Bike"/>
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/RSHP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/RSHP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/A">
+    <skos:closeMatch rdf:resource="http://purl.org/krgroup/rshp/example/o1"/>
+    <skos:prefLabel rdf:resource="http://purl.org/krgroup/rshp/example/l4"/>
+    <skos:prefLabel rdf:resource="http://purl.org/krgroup/rshp/example/l3"/>
+    <dcterms:identifier rdf:resource="http://purl.org/krgroup/rshp/example/l2"/>
+    <rdfs:label rdf:resource="http://purl.org/krgroup/rshp/example/l1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/RSHP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/l1">
+    <rshp:has-type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rshp:has-lang>en</rshp:has-lang>
+    <rshp:has-value>Mountain Bike</rshp:has-value>
+    <rdf:type rdf:resource="http://purl.org/krgroup/rshp/ontology/KnowledgeElement"/>
+  </rdf:Description>
+</rdf:RDF>

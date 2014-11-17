@@ -1,0 +1,56 @@
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia-res: <http://dbpedia.org/resource/> .
+@prefix rshp: <http://purl.org/krgroup/rshp/ontology/>.
+@prefix : <http://purl.org/krgroup/rshp/example/>.
+
+:A rdf:type rshp:KnowledgeElement.
+
+skos:Concept rdf:type rshp:KnowledgeElement.
+rdf:type rdf:type rshp:RSHP.
+
+:A rdf:type skos:Concept.
+
+rdfs:label rdf:type rshp:RSHP.
+:l1 a rshp:KnowledgeElement.
+:l1 rshp:has-value "Mountain Bike".
+:l1 rshp:has-lang "en".
+:l1 rshp:has-type rdf:langString.
+
+:A rdfs:label :l1.
+
+dcterms:identifier rdf:type rshp:RSHP.
+:l2 a rshp:KnowledgeElement.
+:l2 rshp:has-value "1".
+:l2 rshp:has-type xsd:integer.
+
+:A dcterms:identifier :l2.
+
+skos:prefLabel rdf:type rshp:RSHP.
+:l3 a rshp:KnowledgeElement.
+:l3 rshp:has-value "Mountain Bike".
+:l3 rshp:has-lang "en".
+:l3 rshp:has-type rdf:langString.
+
+:A skos:prefLabel :l3.
+
+skos:prefLabel rdf:type rshp:RSHP.
+:l4 a rshp:KnowledgeElement.
+:l4 rshp:has-value "Bicileta de Montaña".
+:l4 rshp:has-lang "es".
+:l4 rshp:has-type rdf:langString.
+
+:A skos:prefLabel :l4.
+
+
+skos:closeMatch rdf:type rshp:RSHP.
+:o1 a rshp:KnowledgeElement.
+:o1 rshp:has-value dbpedia-res:Mountain_Bike.
+:o1 rshp:has-type xsd:anyURI.
+
+:A skos:closeMatch :o1.
+

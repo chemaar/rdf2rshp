@@ -1,0 +1,19 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rshp="http://purl.org/krgroup/rshp/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://purl.org/krgroup/rshp/example/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbpedia-res="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://purl.org/krgroup/rshp/example/Mountain_Bike">
+    <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Mountain_Bike"/>
+    <skos:prefLabel xml:lang="es">Bicicleta de montaña</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mountain_Bike</skos:prefLabel>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</dcterms:identifier>
+    <rdfs:label xml:lang="en">Mountain Bike</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+</rdf:RDF>
