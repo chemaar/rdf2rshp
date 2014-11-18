@@ -12,8 +12,10 @@ import org.neo4j.kernel.impl.util.FileUtils;
 
 public class Neo4jDatabaseConnector {
 
-
-	private static final String RSHP_DB = "target/rshp-test-nc-db-2"; //FIXME: Extract
+	//FIXME: NAME_DATABASE
+	private static final String RSHP_DB = "target/cpv-2008"; 
+	//private static final String RSHP_DB = "target/min-cpv-2008"; 
+	//private static final String RSHP_DB = "target/mountain-bike";
 	private static GraphDatabaseService graphDb;
 	private static long rshpNodeId;
 
