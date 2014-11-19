@@ -24,6 +24,7 @@ import es.inf.uc3m.kr.rdf2rshp.utils.RDFSyntaxHelper;
 import es.inf.uc3m.kr.rdf2rshp.visitor.ArtifactNeo4jNodeLinkCreatorVisitor;
 import es.inf.uc3m.kr.rdf2rshp.visitor.ArtifactNeo4jVisitor;
 import es.inf.uc3m.kr.rdf2rshp.visitor.ArtifactShowVisitor;
+import es.inf.uc3m.kr.rdf2rshp.visitor.BatchArtifactNeo4jNodeLinkCreatorVisitor;
 import es.inf.uc3m.kr.rdf2rshp.visitor.RDF2RSHPVisitor;
 import es.inf.uc3m.kr.rshp.minimal.Artifact;
 import es.inf.uc3m.kr.rshp.minimal.KnowledgeElement;
@@ -38,8 +39,6 @@ public class BasicTransformation {
 		byte[] encoded = Files.readAllBytes(Paths.get(path));
 		return new String(encoded, encoding);
 	}
-
-
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -77,12 +76,17 @@ public class BasicTransformation {
 			artifact.getRHSPs().add(rshp);
 			nkes = nkes+3;
 		}
+		rdfModel.removeAll();
+		rdfModel = null;
 		logger.info("Indexing NKES: "+nkes+" RHSPs: "+artifact.getRHSPs().size());
 //		ArtifactShowVisitor printer = new ArtifactShowVisitor();
 //		printer.visit(artifact);
 //		ArtifactNeo4jVisitor serializer = new ArtifactNeo4jVisitor();
 //		serializer.visit(artifact);
-		ArtifactNeo4jNodeLinkCreatorVisitor nodeCreatorVisitor = new ArtifactNeo4jNodeLinkCreatorVisitor();
+//		ArtifactNeo4jNodeLinkCreatorVisitor nodeCreatorVisitor = 
+//				new ArtifactNeo4jNodeLinkCreatorVisitor();
+		BatchArtifactNeo4jNodeLinkCreatorVisitor nodeCreatorVisitor=
+				new BatchArtifactNeo4jNodeLinkCreatorVisitor();
 		nodeCreatorVisitor.visit(artifact);
 //		String triples=RDFSyntaxHelper.serializeModel(rdfModel, RDFFormat.RDFXML);
 //		System.out.println(triples);

@@ -37,7 +37,7 @@ public class Neo4jSerializer {
 	public enum PROPERTY_LABELS{
 		URI,
 		LEXICAL_FORM,
-		LANGUAGE, FROM, TO, VALUE
+		LANGUAGE, FROM, TO, VALUE, HAS_PART
 	}
 	public enum RelTypes implements RelationshipType{
 		ARTIFACT_NODE
